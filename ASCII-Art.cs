@@ -28,11 +28,7 @@ class Solution {
                     asciiIndex = 26;
                 }
             
-            
-                //Get output  from ASCII input
-                for (int k = 0; k < L; k++) {
-                    output += ROW[(asciiIndex * L) + k];
-                }
+                output += ROW.Substring(asciiIndex * L, L);
             }
             
             Console.WriteLine(output);
