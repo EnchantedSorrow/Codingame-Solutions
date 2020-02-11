@@ -47,10 +47,10 @@ class Solution
     }
 
     static bool CheckIfValid(string extension, string mimeType) {
-        if ((extension.Length > 10) && (extension.Contains(" "))) {
+        if ((extension.Length > 10) || (extension.Contains(" "))) {
             return false;
         }
-        if ((mimeType.Length > 50) && (mimeType.Contains(" "))) {
+        if ((mimeType.Length > 50) || (mimeType.Contains(" "))) {
             return false;
         }
         
